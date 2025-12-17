@@ -1,0 +1,22 @@
+### System Health Report ###
+Date: Thu Sep 11 10:31:51 AM IST 2025
+
+CPU usage
+
+Memory Usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.1Gi       1.6Gi        33Mi       1.4Gi       2.7Gi
+Swap:          3.7Gi          0B       3.7Gi
+Disk Usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.0M  385M   1% /run
+/dev/sda2        20G   12G  7.0G  63% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  112K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/prasham/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/prasham/Ubuntu 24.04.2 LTS amd64
+
+Uptime info
+ 10:31:51 up 12 min,  1 user,  load average: 0.06, 0.16, 0.19
+

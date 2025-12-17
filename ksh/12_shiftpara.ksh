@@ -1,0 +1,11 @@
+#!/bin/ksh
+if [ "$#" == "0" ]
+then
+echo You have to give at least one parameter.
+exit 1
+fi
+while (( $# ))
+do
+echo You gave me $1
+shift
+done
