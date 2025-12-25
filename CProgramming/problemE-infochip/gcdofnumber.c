@@ -1,19 +1,24 @@
 #include <stdio.h>
 
 int gcd(int a, int b) {
-    while (b != 0) {
-        int temp = b;
-        b = a % b;
-        a = temp;
-    }
-    return a;
+    return b == 0 ? a : gcd(b, a % b);
 }
 
 int main() {
-    int n1, n2;
-    printf("Enter two numbers: ");
-    scanf("%d %d", &n1, &n2);
+    int n, i, arr[50], result;
 
-    printf("GCD of %d and %d is %d\n", n1, n2, gcd(n1, n2));
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter numbers:\n");
+    for (i = 0; i < n; i++)
+        scanf("%d", &arr[i]);
+
+    result = arr[0];
+    for (i = 1; i < n; i++)
+        result = gcd(result, arr[i]);
+
+    printf("GCD = %d\n", result);
     return 0;
 }
+
